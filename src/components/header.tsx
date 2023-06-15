@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { HiSearch } from "react-icons/hi"
-import CitiesDropdown from "./citiesDropdown"
+import CitiesDropdown from "./citiesNavLink"
 import { Button } from "./ui/button"
 
 
