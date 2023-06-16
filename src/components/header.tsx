@@ -10,7 +10,7 @@ const Header = ({
     city: string
   }) => {
   return (
-    <header className="w-full items-center h-20 bg-gray-50">
+    <header className="w-full items-center bg-gray-50">
       <div className="w-full flex items-center flex-row px-8">
         <div className="border-r p-3 border-gray-200">
           <Image
