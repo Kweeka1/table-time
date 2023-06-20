@@ -15,7 +15,7 @@ const CitiesNavLink = ({ city }: { city: string }) => {
     <div>
       <NavigationMenu>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="gap-2">
+          <NavigationMenuTrigger className="gap-[1px]">
             <HiOutlineLocationMarker size={24} />
             <p>{city}</p>
           </NavigationMenuTrigger>
