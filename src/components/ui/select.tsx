@@ -108,13 +108,29 @@ const SelectSeparator = React.forwardRef<
 ))
 SelectSeparator.displayName = SelectPrimitive.Separator.displayName
 
-export {
-  Select,
-  SelectGroup,
-  SelectValue,
-  SelectTrigger,
-  SelectContent,
-  SelectLabel,
-  SelectItem,
-  SelectSeparator,
+interface SelectBoxProps {
+  placeholder: string
+  items: string[]
+  className?: string
+  icon?: React.ReactNode
 }
+
+const SelectBox: React.FC<SelectBoxProps> = ({ placeholder, items, className, icon }) => {
+  return (
+    <Select>
+      <SelectTrigger className={className}>
+        {icon}
+        <SelectValue placeholder={placeholder} />
+      </SelectTrigger>
+      <SelectContent>
+        <SelectGroup className="h-[300px] overflow-x-hidden overflow-y-auto">
+          {items.map((item) => (
+            <SelectItem value={item} key={item.replace(/ /g, "-")}>{item}</SelectItem>
+          ))}
+        </SelectGroup>
+      </SelectContent>
+    </Select>
+  )
+}
+
+export default SelectBox;
