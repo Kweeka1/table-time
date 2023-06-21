@@ -3,7 +3,7 @@
 import { Clock, User2 } from "lucide-react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
-import SelectBox from "./SelectBox";
+import SelectBox from "./ui/select";
 import { useState } from "react";
 import { DatePicker } from "./DatePicker";
 import { generateTimesUntilMidnight } from "@/lib/utils";
@@ -29,7 +29,7 @@ const SearchForm = () => {
 					icon={<User2 />}
 					className="bg-white rounded-sm rounded-l-none border-r-gray-200"
 					placeholder="Party size"
-					items={Array.from(Array(20), (_, i) => `${i} people`)}
+					items={Array.from(Array(20), (_, i) => `${i + 1} people`)}
 				/>
 			</div>
 			<div className="flex gap-4">
