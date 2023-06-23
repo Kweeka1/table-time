@@ -29,7 +29,7 @@ const Header = () => {
             <CitiesDropdown city={capitalize(pathSegments[1]?.name || '')} />
           </div>
           <div className="flex gap-4 items-center">
-            <Button variant="signIn">Sign in</Button>
+            <Button size="xs" variant="signIn">Sign in</Button>
             <HiSearch className="cursor-pointer" size={24} />
           </div>
         </div>
