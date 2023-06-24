@@ -1,7 +1,7 @@
 import Header from '@/components/layouts/header'
 import './globals.css'
 import { Inter } from 'next/font/google'
-import TableSearch from '@/components/TableSearch'
+import TableSearch from '@/components/layouts/TableSearch'
 
 const inter = Inter({ subsets: ['latin'] })
 
