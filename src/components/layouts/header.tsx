@@ -2,9 +2,9 @@
 
 import Image from "next/image"
 import { HiSearch } from "react-icons/hi"
-import CitiesDropdown from "./citiesNavLink"
-import { Button } from "./ui/button"
-import BreadCrumbs from "./BreadCrumbs"
+import CitiesDropdown from "../citiesNavLink"
+import { Button } from "../ui/button"
+import BreadCrumbs from "../BreadCrumbs"
 import { usePathname } from "next/navigation"
 import { capitalize, getPathSegments } from "@/lib/utils"
 
