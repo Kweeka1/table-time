@@ -10,6 +10,7 @@ import { generateTimesUntilMidnight } from "@/lib/utils";
 
 const SearchForm = () => {
 	const [date, setDate] = useState<Date>(new Date());
+	const timesUntilMidNight = generateTimesUntilMidnight();
 
 	return (
 		<>
@@ -23,7 +24,7 @@ const SearchForm = () => {
 					icon={<Clock />}
 					className="bg-white rounded-none border-r-gray-200"
 					placeholder="Time"
-					items={generateTimesUntilMidnight()}
+					items={timesUntilMidNight || []}
 				/>
 				<SelectBox
 					icon={<User2 />}
