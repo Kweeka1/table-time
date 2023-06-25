@@ -1,6 +1,6 @@
 "use client"
 
-import { Clock, User2 } from "lucide-react";
+import { Clock, User2, Search } from "lucide-react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import SelectBox from "./ui/select";
@@ -34,7 +34,12 @@ const SearchForm = () => {
 				/>
 			</div>
 			<div className="flex gap-4">
-				<Input type="text" placeholder="Location, Restaurant, or Cuisine" className="bg-white rounded-sm placeholder:font-semibold placeholder:text-slate-400" />
+				<Input
+					icon={<Search size={22} className="text-slate-700" />}
+					type="text"
+					placeholder="Location, Restaurant, or Cuisine"
+					className="bg-white rounded-sm placeholder:font-semibold placeholder:text-slate-400"
+				/>
 				<Button type="button" className="h-12 w-48 bg-[#B8222D] opacity-100 font-semibold hover:opacity-100 hover:bg-red-600 rounded-sm">Let's go</Button>
 			</div>
 		</>
